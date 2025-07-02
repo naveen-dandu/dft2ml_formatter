@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "sqs_substitution_tool: Python utility to generate SQS-like structures via atomic substitution"
+authors:
+  - family-names: Dandu
+    given-names: Naveen
+    affiliation: "University of Illinois Chicago"
+    orcid: "https://orcid.org/0000-0001-7122-8537"  
+date-released: 2025-07-02
+version: "1.0.0"
+repository-code: "https://github.com/naveen-dandu/sqs_substitution_tool"
+license: MIT
