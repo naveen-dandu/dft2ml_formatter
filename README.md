@@ -29,6 +29,14 @@ cd dft2ml_formatter_full
 pip install .
 ```
 
+---
+
+## Launch Demo Notebook
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/naveen-dandu/dft2ml_formatter_full/blob/main/notebooks/DFT2ML_Demo.ipynb)
+
+---
+
 ## 🧠 Features
 
 - ✅ VASP: extract Fermi energy, total energy, band gap, atom types
