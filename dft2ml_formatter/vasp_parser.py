@@ -90,4 +90,3 @@ def parse_vasp_outputs(outcar_path="OUTCAR", doscar_path="DOSCAR"):
 if __name__ == "__main__":
     data = parse_vasp_outputs("examples/vasp/OUTCAR", "examples/vasp/DOSCAR")
     print("Parsed VASP Data:\n", data)
-
