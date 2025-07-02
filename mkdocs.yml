@@ -1,0 +1,9 @@
+site_name: DFT2ML Formatter
+repo_url: https://github.com/naveen-dandu/dft2ml_formatter_full
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Usage: usage.md
+  - Parsers: parsers.md
+
