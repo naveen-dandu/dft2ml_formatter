@@ -1,6 +1,3 @@
-import os
-
-
 def parse_outcar(outcar_path):
     """
     Parses number of atoms, total energy, and Fermi level from OUTCAR.
@@ -57,7 +54,6 @@ def extract_bandgap_from_doscar(doscar_path, fermi_energy=None):
             total_dos = float(tokens[1])
             energy_data.append((energy, total_dos))
 
-    # Extract Fermi energy from DOSCAR if not provided
     if fermi_energy is None:
         for line in lines:
             if "E-fermi" in line:
@@ -70,7 +66,7 @@ def extract_bandgap_from_doscar(doscar_path, fermi_energy=None):
     unoccupied = [e for e, d in energy_data if e > fermi_energy and d > 1e-4]
 
     if not occupied or not unoccupied:
-        return 0.0  # Metallic or invalid
+        return 0.0
 
     vbm = max(occupied)
     cbm = min(unoccupied)
@@ -82,13 +78,13 @@ def parse_vasp_outputs(outcar_path="OUTCAR", doscar_path="DOSCAR"):
     Combines OUTCAR and DOSCAR parsing into a single report.
     """
     outcar_info = parse_outcar(outcar_path)
-    bandgap = extract_bandgap_from_doscar(doscar_path, fermi_energy=outcar_info.get("fermi_energy"))
+    bandgap = extract_bandgap_from_doscar(
+        doscar_path, fermi_energy=outcar_info.get("fermi_energy")
+    )
     outcar_info["bandgap_eV"] = bandgap
     return outcar_info
 
 
-# For testing/demo:
 if __name__ == "__main__":
     data = parse_vasp_outputs("examples/vasp/OUTCAR", "examples/vasp/DOSCAR")
     print("Parsed VASP Data:\n", data)
-
