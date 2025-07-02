@@ -4,4 +4,3 @@ def parse_outcar(filepath):
         lines = f.readlines()
     # Dummy logic for now
     return {"n_lines": len(lines)}
-
