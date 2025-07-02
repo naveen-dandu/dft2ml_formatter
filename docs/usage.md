@@ -68,4 +68,4 @@ pd.DataFrame([features]).to_csv("vasp_features.csv", index=False)
 
 ## End-to-End Demo
 
-See [`notebooks/DFT2ML_Demo.ipynb`](https://github.com/naveen-dandu/dft2ml_formatter_full/blob/main/notebooks/DFT2ML_Demo.ipynb) for a full walkthrough.
+See [`notebooks/DFT2ML_Demo.ipynb`](https://github.com/naveen-dandu/dft2ml_formatter_full/tree/main/notebooks/DFT2ML_Demo.ipynb) for a full walkthrough.
