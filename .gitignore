@@ -1,1 +1,6 @@
 examples/vasp/DOSCAR
+dft2ml_formatter/__pycache__/
+examples/vasp/.jlpaoycg
+examples/vasp/FERMI_ENERGY
+examples/vasp/PROCAR
+examples/vasp/TDOS.jpg
