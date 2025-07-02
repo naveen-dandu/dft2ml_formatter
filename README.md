@@ -91,9 +91,6 @@ We welcome contributions for additional parser modules or output formats.
 
 MIT License. See `LICENSE` for details.
 
----
-[![DOI](https://zenodo.org/badge/1012158238.svg)](https://doi.org/10.5281/zenodo.15792366)
----
 
 ## 📊 Citation (optional)
 
